@@ -51,55 +51,91 @@
 
 <hr>
 
-<h2>🛠️ Required Hardware Specifications</h2>
-<p><b>⚠️ ATTENTION:</b> This firmware is hard-coded specifically for the pinout below. Using different pins will cause malfunction or hardware damage.</p>
+<h2>🛠️ Detailed Hardware & Pinout Specifications</h2>
+<p><b>⚠️ STRICT WARNING:</b> This firmware is hard-coded specifically for the pinout below. Using different pins will cause immediate malfunction or permanent hardware damage. Ensure strict adherence to this wiring diagram.</p>
 
+<h3>1. OLED Display (SSD1306 128x64 - I2C)</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: left; padding: 8px;">
+  <tr style="background-color: #f2f2f2;">
+    <th>OLED Pin</th>
+    <th style="text-align: center;">ESP32 Pin</th>
+    <th>Notes</th>
+  </tr>
+  <tr><td>SDA</td><td style="text-align: center;"><b>GPIO 4</b></td><td>Data Line</td></tr>
+  <tr><td>SCL</td><td style="text-align: center;"><b>GPIO 5</b></td><td>Clock Line</td></tr>
+  <tr><td>VCC</td><td style="text-align: center;"><b>3.3V</b></td><td>DO NOT use 5V</td></tr>
+  <tr><td>GND</td><td style="text-align: center;"><b>GND</b></td><td>Common Ground</td></tr>
+</table>
+<p><i>* I2C Address must be set to <b>0x3C</b>.</i></p>
+
+<h3>2. BW16 Deauther Module (RTL8720DN - UART1)</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: left; padding: 8px;">
+  <tr style="background-color: #f2f2f2;">
+    <th>BW16 Pin</th>
+    <th style="text-align: center;">ESP32 Pin</th>
+    <th>Notes</th>
+  </tr>
+  <tr><td>PB1 (RX)</td><td style="text-align: center;"><b>GPIO 25</b></td><td>ESP32 TX → BW16 RX</td></tr>
+  <tr><td>PB2 (TX)</td><td style="text-align: center;"><b>GPIO 26</b></td><td>ESP32 RX ← BW16 TX</td></tr>
+  <tr><td>GND</td><td style="text-align: center;"><b>GND</b></td><td>Common Ground (CRITICAL)</td></tr>
+</table>
+<p><i>* BW16 requires its own separate Deauther firmware to function. Only connect TX to RX and RX to TX.</i></p>
+
+<h3>3. NRF24L01 #1 - Bluetooth Jammer (HSPI Bus)</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: left; padding: 8px;">
+  <tr style="background-color: #f2f2f2;">
+    <th>NRF24L01 Pin</th>
+    <th style="text-align: center;">ESP32 Pin</th>
+    <th>Notes</th>
+  </tr>
+  <tr><td>CE</td><td style="text-align: center;"><b>GPIO 16</b></td><td>Chip Enable</td></tr>
+  <tr><td>CSN</td><td style="text-align: center;"><b>GPIO 15</b></td><td>Chip Select</td></tr>
+  <tr><td>MOSI</td><td style="text-align: center;"><b>GPIO 13</b></td><td>HSPI Default</td></tr>
+  <tr><td>MISO</td><td style="text-align: center;"><b>GPIO 12</b></td><td>HSPI Default</td></tr>
+  <tr><td>SCK</td><td style="text-align: center;"><b>GPIO 14</b></td><td>HSPI Default</td></tr>
+  <tr><td>VCC</td><td style="text-align: center;"><b>3.3V</b></td><td>DO NOT use 5V</td></tr>
+  <tr><td>GND</td><td style="text-align: center;"><b>GND</b></td><td>Common Ground</td></tr>
+</table>
+
+<h3>4. NRF24L01 #2 - Bluetooth Jammer (VSPI Bus)</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: left; padding: 8px;">
+  <tr style="background-color: #f2f2f2;">
+    <th>NRF24L01 Pin</th>
+    <th style="text-align: center;">ESP32 Pin</th>
+    <th>Notes</th>
+  </tr>
+  <tr><td>CE</td><td style="text-align: center;"><b>GPIO 22</b></td><td>Chip Enable</td></tr>
+  <tr><td>CSN</td><td style="text-align: center;"><b>GPIO 21</b></td><td>Chip Select</td></tr>
+  <tr><td>MOSI</td><td style="text-align: center;"><b>GPIO 23</b></td><td>VSPI Default</td></tr>
+  <tr><td>MISO</td><td style="text-align: center;"><b>GPIO 19</b></td><td>VSPI Default</td></tr>
+  <tr><td>SCK</td><td style="text-align: center;"><b>GPIO 18</b></td><td>VSPI Default</td></tr>
+  <tr><td>VCC</td><td style="text-align: center;"><b>3.3V</b></td><td>DO NOT use 5V</td></tr>
+  <tr><td>GND</td><td style="text-align: center;"><b>GND</b></td><td>Common Ground</td></tr>
+</table>
+<p><b>⚠️ IMPORTANT:</b> Solder a <b>10uF Capacitor</b> directly between the VCC and GND pins on <b>BOTH</b> NRF24L01 modules to prevent voltage drops and crashes during transmission.</p>
+
+<h3>5. Physical Control Buttons</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: left; padding: 8px;">
+  <tr style="background-color: #f2f2f2;">
+    <th>Function</th>
+    <th style="text-align: center;">ESP32 Pin</th>
+    <th>Connection</th>
+  </tr>
+  <tr><td>UP</td><td style="text-align: center;"><b>GPIO 17</b></td><td>Button → GND (Uses Internal Pull-Up)</td></tr>
+  <tr><td>DOWN</td><td style="text-align: center;"><b>GPIO 33</b></td><td>Button → GND (Uses Internal Pull-Up)</td></tr>
+  <tr><td>SELECT</td><td style="text-align: center;"><b>GPIO 27</b></td><td>Button → GND (Uses Internal Pull-Up)</td></tr>
+  <tr><td>BACK</td><td style="text-align: center;"><b>GPIO 32</b></td><td>Button → GND (Uses Internal Pull-Up)</td></tr>
+</table>
+
+<h3>6. On-Board Components</h3>
 <table border="1" style="border-collapse: collapse; width: 100%; text-align: left; padding: 8px;">
   <tr style="background-color: #f2f2f2;">
     <th>Component</th>
-    <th style="text-align: center;">Qty</th>
-    <th>Description</th>
+    <th style="text-align: center;">Pin</th>
+    <th>Notes</th>
   </tr>
-  <tr>
-    <td>ESP32 DevKit V1</td>
-    <td style="text-align: center;">1</td>
-    <td>Master Controller</td>
-  </tr>
-  <tr>
-    <td>BW16 (RTL8720DN)</td>
-    <td style="text-align: center;">1</td>
-    <td>Required for 5GHz/2.4GHz Deauth</td>
-  </tr>
-  <tr>
-    <td>NRF24L01+</td>
-    <td style="text-align: center;">2</td>
-    <td>Required for Bluetooth Jammer</td>
-  </tr>
-  <tr>
-    <td>OLED SSD1306 128x64</td>
-    <td style="text-align: center;">1</td>
-    <td>I2C Address: 0x3C</td>
-  </tr>
-  <tr>
-    <td>Push Button</td>
-    <td style="text-align: center;">4</td>
-    <td>UP, DOWN, SELECT, BACK</td>
-  </tr>
-  <tr>
-    <td>10uF Capacitor</td>
-    <td style="text-align: center;">2</td>
-    <td>Soldered on NRF24L01 VCC</td>
-  </tr>
+  <tr><td>Built-in LED</td><td style="text-align: center;"><b>GPIO 2</b></td><td>Used for Status Indicators</td></tr>
 </table>
-
-<h4>🔑 Key Wiring:</h4>
-<ul>
-  <li><b>OLED:</b> SDA -> GPIO 4 | SCL -> GPIO 5</li>
-  <li><b>BW16:</b> TX -> GPIO 26 | RX -> GPIO 25</li>
-  <li><b>NRF #1 (HSPI):</b> CE -> GPIO 16 | CSN -> GPIO 15</li>
-  <li><b>NRF #2 (VSPI):</b> CE -> GPIO 22 | CSN -> GPIO 21</li>
-  <li><b>Buttons:</b> UP -> GPIO 17 | DOWN -> GPIO 33 | SELECT -> GPIO 27 | BACK -> GPIO 32</li>
-</ul>
 
 <hr>
 
