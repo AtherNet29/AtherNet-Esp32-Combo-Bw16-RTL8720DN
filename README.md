@@ -1,4 +1,4 @@
-<img width="186" height="28" alt="image" src="https://github.com/user-attachments/assets/6c9623e5-a78d-44c0-a29e-ef4bdda9eccc" />
+<img src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge&logo=arduino" />
 <img width="193" height="28" alt="image" src="https://github.com/user-attachments/assets/44c926c8-ff3c-4d8f-8dc7-2aeafaddbb5c" />
 <img width="158" height="28" alt="image" src="https://github.com/user-attachments/assets/31e5063f-5ba2-4e9d-b342-08fbf53b2c2a" />
 
