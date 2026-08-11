@@ -1,11 +1,21 @@
-0. Make sure you have installed USB Serial Driver on your Windows PC or the COM port will not appear
-1. Open flash_download_tool (Windows) or ESP32_Flash App (Android)
-2. Select your board
-3. Erase the board first
-4. Load the file
-5. Set the offset to 0x0
-6. Flash
-7. ATHERNET SSID will appear shortly
+Flashing the ESP32
+1. Make sure you have installed USB Serial Driver on your Windows PC or the COM port will not appear
+2. Open flash_download_tool (Windows) or ESP32_Flash App (Android)
+3. Select your board
+4. Erase the board first
+5. Load the file
+6. Set the offset to 0x0
+7. Flash
+8. ATHERNET SSID will appear shortly
+
+Flashing the BW16
+The BW16 module uses the Web Serial interface; ensure you are using the Google Chrome or Microsoft Edge browser.
+1. Open your browser (Chrome/Edge) and visit the following website: https://nethercap-web-flasher-v2.vercel.app/
+2. Connect the BW16 module to your PC using a USB cable (ensure the cable supports data transfer, not just charging).
+3. Put the BW16 module into Bootloader Mode (usually by pressing and holding the BOOT button, then pressing and releasing the RST/EN button, and finally releasing the BOOT button).
+4. On the website, click the "Connect" or "Select Port" button and choose the COM port corresponding to the BW16.
+5. Click "Choose File" and select the appropriate BW16 firmware file (.bin).
+6. Click the "Flash" button on the website and wait for the process to complete and display a success message.
 
 What if the SSID does not appear?
 1. The ESP32 is still on bootloader mode. Unplug then plug it
