@@ -190,14 +190,13 @@
 <h2>📸 Preview & Documentation</h2>
 <p><b>Web Dashboard Interface:</b></p>
 <p align="center">
-  <!-- GANTI preview.jpg DENGAN NAMA FILE FOTO ANDA -->
-  <[img src="preview.jpg" width="800" alt="Dashboard Preview"](https://github.com/AtherNet29/AtherNet-Esp32-Combo-Bw16-RTL8720DN/blob/134ee7f6ee2d5a1805c25577202dfdea174c7670/HALAMAN%20DASHBOAR.jpg) />
+  <img src="https://raw.githubusercontent.com/AtherNet29/AtherNet-Esp32-Combo-Bw16-RTL8720DN/134ee7f6ee2d5a1805c25577202dfdea174c7670/HALAMAN%20DASHBOAR.jpg" width="800" alt="Dashboard Preview" />
 </p>
 
 <p><b>Module Wiring Diagram:</b></p>
 <p align="center">
-  <!-- GANTI wiring.jpg DENGAN NAMA FILE FOTO ANDA -->
-  <img src="wiring.jpg" width="800" alt="Wiring Diagram" />
+  <!-- GANTI LINK DI BAWAH INI DENGAN LINK GAMBAR WIRING ANDA -->
+  <img src="MASUKKAN_LINK_GAMBAR_WIRING_DISINI" width="800" alt="Wiring Diagram" />
 </p>
 
 <hr>
