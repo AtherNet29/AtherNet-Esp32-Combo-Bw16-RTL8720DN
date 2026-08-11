@@ -178,8 +178,9 @@
   </p>
   <h3>🛒 Price: RP 50.000</h3>
   <br>
-  <a href="https://t.me/AtherNet29">
-    <img src="https://img.shields.io/badge/Buy_Now-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
+  <a href="https://t.me/+6283141852690">
+  <img src="https://img.shields.io/badge/Buy_Now-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
+  </a>
   </a>
   <br><br>
   <i>Click the button above to chat directly with me on Telegram.</i>
