@@ -1,0 +1,14 @@
+0. Make sure you have installed USB Serial Driver on your Windows PC or the COM port will not appear
+1. Open flash_download_tool (Windows) or ESP32_Flash App (Android)
+2. Select your board
+3. Erase the board first
+4. Load the file
+5. Set the offset to 0x0
+6. Flash
+7. NETHERCAP SSID will appear shortly
+
+What if the SSID does not appear?
+1. The ESP32 is still on bootloader mode. Unplug then plug it
+2. The binary file does not match with your ESP32 Chip
+3. You set the configuration wrong
+4. You did not erase it before flashing
