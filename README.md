@@ -128,6 +128,41 @@
 
 <hr>
 
+<h2>📦 How to Flash the Firmware (.bin)</h2>
+
+<h3>1. Flashing the ESP32</h3>
+<ul>
+  <li>Make sure you have installed USB Serial Driver on your Windows PC or the COM port will not appear</li>
+  <li>Open flash_download_tool (Windows) or ESP32_Flash App (Android)</li>
+  <li>Select your board</li>
+  <li>Erase the board first</li>
+  <li>Load the file</li>
+  <li>Set the offset to 0x0</li>
+  <li>Flash</li>
+  <li><b>ATHERNET SSID will appear shortly</b></li>
+</ul>
+
+<h3>2. Flashing the BW16</h3>
+<p><i>The BW16 module uses the Web Serial interface; ensure you are using the Google Chrome or Microsoft Edge browser.</i></p>
+<ol>
+  <li>Open your browser (Chrome/Edge) and visit the following website: <a href="https://nethercap-web-flasher-v2.vercel.app/">https://nethercap-web-flasher-v2.vercel.app/</a></li>
+  <li>Connect the BW16 module to your PC using a USB cable (ensure the cable supports data transfer, not just charging).</li>
+  <li>Put the BW16 module into Bootloader Mode (usually by pressing and holding the BOOT button, then pressing and releasing the RST/EN button, and finally releasing the BOOT button).</li>
+  <li>On the website, click the "Connect" or "Select Port" button and choose the COM port corresponding to the BW16.</li>
+  <li>Click "Choose File" and select the appropriate BW16 firmware file (.bin).</li>
+  <li>Click the "Flash" button on the website and wait for the process to complete and display a success message.</li>
+</ol>
+
+<h3>❓ What if the SSID does not appear?</h3>
+<ol>
+  <li>The ESP32 is still on bootloader mode. Unplug then plug it</li>
+  <li>The binary file does not match with your ESP32 Chip</li>
+  <li>You set the configuration wrong</li>
+  <li>You did not erase it before flashing</li>
+</ol>
+
+<hr>
+
 <div align="center">
   <h2>💎 Get the Full / Premium Version</h2>
   <p>The file available in this repository is a <b>Trial Version</b>, strictly limited to initial demonstration.</p>
