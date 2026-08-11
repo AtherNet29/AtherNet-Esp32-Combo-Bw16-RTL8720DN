@@ -5,7 +5,7 @@
 4. Load the file
 5. Set the offset to 0x0
 6. Flash
-7. NETHERCAP SSID will appear shortly
+7. ATHERNET SSID will appear shortly
 
 What if the SSID does not appear?
 1. The ESP32 is still on bootloader mode. Unplug then plug it
