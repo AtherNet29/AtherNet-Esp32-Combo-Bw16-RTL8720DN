@@ -195,8 +195,7 @@
 
 <p><b>Module Wiring Diagram:</b></p>
 <p align="center">
-  <!-- GANTI LINK DI BAWAH INI DENGAN LINK GAMBAR WIRING ANDA -->
-  <img src="MASUKKAN_LINK_GAMBAR_WIRING_DISINI" width="800" alt="Wiring Diagram" />
+  <img src="https://raw.githubusercontent.com/AtherNet29/AtherNet-Esp32-Combo-Bw16-RTL8720DN/f357df9255eadc4c42c693fca3504bf4051f7470/SKEMATIK_ESP32%2BBW16.jpg" width="800" alt="Wiring Diagram" />
 </p>
 
 <hr>
