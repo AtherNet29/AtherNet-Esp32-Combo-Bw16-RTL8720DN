@@ -191,7 +191,7 @@
 <p><b>Web Dashboard Interface:</b></p>
 <p align="center">
   <!-- GANTI preview.jpg DENGAN NAMA FILE FOTO ANDA -->
-  <img src="preview.jpg" width="800" alt="Dashboard Preview" />
+  <[img src="preview.jpg" width="800" alt="Dashboard Preview"](https://github.com/AtherNet29/AtherNet-Esp32-Combo-Bw16-RTL8720DN/blob/134ee7f6ee2d5a1805c25577202dfdea174c7670/HALAMAN%20DASHBOAR.jpg) />
 </p>
 
 <p><b>Module Wiring Diagram:</b></p>
