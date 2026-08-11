@@ -9,31 +9,20 @@
 <h1 align="center">⚡ AETHERNET PRO</h1>
 <p align="center">
   <b>Advanced Multi-Vector WiFi & Bluetooth Security Audit Tool</b><br>
-  <i>A single module to stress-test the resilience of 2.4GHz, 5GHz, and Bluetooth networks.</i>
+  <i>Dual modules to stress-test the resilience of 2.4GHz, 5GHz, and Bluetooth networks.</i>
 </p>
 
 <hr>
 
-<h2>🌟 Why AETHERNET PRO is Different</h2>
-<p>Most tools rely solely on the ESP32, which causes bottlenecks during heavy attacks. AETHERNET PRO utilizes a <b>Distributed Attack System</b>, combining the power of 3 distinct microcontrollers simultaneously:</p>
-<ul>
-  <li><b>ESP32:</b> Acts as the Master Controller, Web Server, and Password Capture engine.</li>
-  <li><b>BW16:</b> Dedicated solely to handling Deauthentication attacks, providing extreme stability for both 2.4GHz & 5GHz networks.</li>
-  <li><b>Dual NRF24L01:</b> Runs Continuous Wave Jamming to test Bluetooth frequencies without consuming the main CPU's resources.</li>
-</ul>
-<p><b>The result?</b> Attacks run smoothly, the UI remains highly responsive, and the success rate of credential capture is significantly higher.</p>
-
-<hr>
-
-<h2>🎯 Key Features</h2>
+<h2>🎯 Feature Details</h2>
 
 <h3>📡 WiFi Attacks (2.4GHz & 5GHz)</h3>
 <ul>
-  <li><b>Smart Deauth Attack:</b> Selectively disconnects targets using the BW16, forcing devices to automatically connect to our fake network (Evil Twin).</li>
+  <li><b>Smart Deauth Attack:</b> Selectively disconnects targets using BW16, forcing devices to automatically connect to our fake network (Evil Twin).</li>
   <li><b>Evil Twin & Captive Portal:</b> 100% identical network cloning (Including SSID & Channel). Supports Custom HTML for highly realistic phishing pages.</li>
   <li><b>Rogue AP:</b> Creates a standalone fake Access Point with login pages (Google/Facebook style) to capture credentials.</li>
   <li><b>Beacon Spam:</b> Floods the area with hundreds of fake SSIDs (Customizable up to 50 different names).</li>
-  <li><b>Password Auto-Verify:</b> When a victim enters a password on the phishing page, the ESP32 automatically verifies its correctness against the real router in real-time.</li>
+  <li><b>Password Auto-Verify:</b> When a victim enters a password on the phishing page, it automatically verifies its correctness against the real router in real-time.</li>
 </ul>
 
 <h3>📻 Bluetooth Attacks</h3>
@@ -46,7 +35,7 @@
   <li><b>Dark Web Dashboard:</b> Futuristic web interface, mobile-responsive, equipped with a color theme system.</li>
   <li><b>3D OLED Menu:</b> Physical navigation using 4 buttons with a 3D Scroll style menu and custom icons.</li>
   <li><b>File Manager:</b> Upload/Edit phishing HTML templates directly from the browser.</li>
-  <li><b>BW16 Auto-Link:</b> Automatically detects and synchronizes with the BW16 module via Serial.</li>
+  <li><b>BW16 Auto-Link:</b> Automatically detects and synchronizes with the BW16 module.</li>
 </ul>
 
 <hr>
@@ -144,12 +133,13 @@
   <p>The file available in this repository is a <b>Trial Version</b>, strictly limited to initial demonstration.</p>
   <p><b>Benefits of purchasing the Premium Version:</b></p>
   <p>
-    ✅ No Time Limits (Trial is only 1 minute, Premium is Unlimited).<br>
-    ✅ No EEPROM Locks (Can be upgraded to future versions).<br>
-    ✅ Lifetime Updates (New features like Auto-Attack Sequence are in development).<br>
+    ✅ No Time Limits (Premium Unlimited/Permanent).<br>
+    ✅ Get Latest Updates (Can be upgraded to newer versions later).<br>
+    ✅ Each purchase includes 2 free updates. You can request it anytime if there is a newer release.<br>
+    Contact me on Telegram if you are interested.<br>
+    The price above is for 1 copy of the binary file and cannot be duplicated.<br>
     ✅ Technical Support via Telegram (Troubleshooting and custom wiring assistance).
   </p>
-  <br>
   <h3>🛒 Price: RP 50.000</h3>
   <br>
   <a href="https://t.me/AtherNet29">
