@@ -152,6 +152,7 @@
   <li>Click "Choose File" and select the appropriate BW16 firmware file (.bin).</li>
   <li>Click the "Flash" button on the website and wait for the process to complete and display a success message.</li>
 </ol>
+<p>📥 <b>Download the required .bin files here:</b> <a href="https://github.com/AtherNet29/AtherNet-Esp32-Combo-Bw16-RTL8720DN/releases/tag/File_Upload">AETHERNET Firmware Releases</a></p>
 
 <h3>❓ What if the SSID does not appear?</h3>
 <ol>
