@@ -191,7 +191,7 @@
 <h2>📸 Preview & Documentation</h2>
 <p><b>Web Dashboard Interface:</b></p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AtherNet29/AtherNet-Esp32-Combo-Bw16-RTL8720DN/134ee7f6ee2d5a1805c25577202dfdea174c7670/HALAMAN%20DASHBOAR.jpg" width="800" alt="Dashboard Preview" />
+ <img src="https://raw.githubusercontent.com/AtherNet29/AtherNet-Esp32-Combo-Bw16-RTL8720DN/134ee7f6ee2d5a1805c25577202dfdea174c7670/HALAMAN%20DASHBOAR.jpg" width="250" alt="Dashboard Preview" />
 </p>
 
 <p><b>Module Wiring Diagram:</b></p>
