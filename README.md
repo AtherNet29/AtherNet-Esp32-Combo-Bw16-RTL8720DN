@@ -196,7 +196,7 @@
 
 <p><b>Module Wiring Diagram:</b></p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AtherNet29/Esp32-Bw16-RTL8720DN-2.4-Ghz-dan-5Ghz-Deauther-Eviltwin-Jammer-Bluetooth/7c5dc59d85d41146c9d3b698d9b242c6fb308bc9/schematic.jpg" width="800" alt="Wiring Diagram" />
+  <img src="https://raw.githubusercontent.com/AtherNet29/Esp32-Bw16-RTL8720DN-2.4-Ghz-dan-5Ghz-Deauther-Eviltwin-Jammer-Bluetooth/7c5dc59d85d41146c9d3b698d9b242c6fb308bc9/schematic.jpg" width="250" alt="Wiring Diagram" />
 </p>
 
 <hr>
